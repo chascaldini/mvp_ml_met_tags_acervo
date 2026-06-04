@@ -38,8 +38,7 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 - Recuperação da informação em acervos digitais 
 
 ## Dataset
-Conjunto de dados públicos disponibilizados pelo Metropolitan Museum of Art (Met), contendo metadados sobre obras da coleção. 
-[Metropolitan Museum of Art (Met)](data/)
+Conjunto de dados públicos disponibilizados pelo [Metropolitan Museum of Art (Met)](data/), contendo metadados sobre obras da coleção. 
 
 ## Metodologia e tecnologias
 Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
