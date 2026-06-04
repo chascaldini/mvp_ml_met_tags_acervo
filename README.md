@@ -46,13 +46,10 @@ Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
 - Apoio à construção de vocabulários controlados
 - Recuperação da informação em acervos digitais 
 
-## Notebook do projeto
-O notebook completo pode ser acessado pelo botão no topo deste repositório.
-
 ## Como executar
-1. Acessar o notebook pelo botão **Open in Colab**
-2. Executar todas as células do início ao fim
-3. Acompanhar a narrativa do notebook, incluindo EDA, modelagem, avaliação dos modelos e exploração semântica com Word2Vec.
+1. Para explorar todas as etapas do projeto, utilize o botão **Open in Colab** disponível no topo deste repositório.
+3. Executar todas as células do início ao fim
+4. Acompanhar a narrativa do notebook, incluindo EDA, modelagem, avaliação dos modelos e exploração semântica com Word2Vec.
 
 ## Autora
 Charlyne Scaldini  
