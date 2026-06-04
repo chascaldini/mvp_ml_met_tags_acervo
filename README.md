@@ -39,6 +39,7 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 
 ## Dataset
 Conjunto de dados públicos disponibilizados pelo Metropolitan Museum of Art (Met), contendo metadados sobre obras da coleção. 
+[Metropolitan Museum of Art (Met)](data/)
 
 ## Metodologia e tecnologias
 Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
