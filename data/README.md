@@ -4,7 +4,7 @@ Este projeto utiliza dados públicos do acervo do Metropolitan Museum of Art (Th
 
 ## Fonte dos dados
 
-MMet Museum Open Access
+Met Museum Open Access  
 https://github.com/metmuseum/openaccess
 
 ## Arquivo utilizado
