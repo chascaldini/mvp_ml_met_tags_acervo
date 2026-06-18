@@ -43,6 +43,7 @@ Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
 - Apoio à construção de vocabulários controlados
 - Recuperação da informação em acervos digitais 
 
+## Boas práticas e reprodutibilidade
 
 ### Ambiente de execução
 - Google Colab
