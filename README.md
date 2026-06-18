@@ -1,14 +1,11 @@
-# NLP e classificação textual para apoio à catalogação e sugestão de descritores em acervos culturais: um estudo com o Met Open Access
+# Classificação textual e técnicas de NLP para apoio à catalogação e sugestão de descritores em acervos culturais: um estudo com o Met Open Access
 MVP de Machine Learning aplicado a acervos culturais | Pós-Graduação em Data Science & Analytics | PUC-Rio
 
 ### Acesse o projeto completo:
 [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1VWpG1qHCgHeC20rcwfWGXnnmi8cpWWcb?usp=sharing)
 
-## Visão geral
-Este projeto investiga a utilização de técnicas de NLP e Machine Learning para apoio à catalogação e sugestão automática de descritores em acervos culturais, utilizando o dataset Open Access do Metropolitan Museum of Art.
-
 ## Objetivo
-Avaliar a viabilidade do uso de técnicas de NLP e Machine Learning para apoiar a sugestão automática de descritores a partir dos metadados textuais de obras e objetos culturais.
+Este projeto investiga a utilização de técnicas de Machine Learning e NLP para sugestão automática de descritores em base de dados de acervos culturais a partir de metadados textuais como apoio à catalogação, utilizando o dataset Open Access do Metropolitan Museum of Art.
 > É possível aprender padrões relevantes nos metadados de um acervo e utilizá-los para sugerir descritores de forma automatizada?
 
 ## Fluxo do projeto
@@ -46,10 +43,52 @@ Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
 - Apoio à construção de vocabulários controlados
 - Recuperação da informação em acervos digitais 
 
-## Como executar
+
+### Ambiente de execução
+- Google Colab
+- Seed fixa: `42`
+- Dataset carregado diretamente do repositório Open Access do Metropolitan Museum of Art
+- Tempo aproximado de execução completa: 20 minutos
+
 1. Para explorar todas as etapas do projeto, utilize o botão **Open in Colab** disponível no topo deste repositório.
 3. Executar todas as células do início ao fim
 4. Acompanhar a narrativa do notebook, incluindo EDA, modelagem, avaliação dos modelos e exploração semântica com Word2Vec.
+
+### Definição do problema
+* Coluna original: `Tags`
+* Variável alvo criada: `Tag_principal`
+* Restrição às 100 Tags mais frequentes do dataset
+
+### Features utilizadas
+* `Title`
+* `Medium`
+* `Object Name`
+* `Classification`
+* `Department`
+
+### Modelos e abordagens avaliados
+* Multinomial Naive Bayes (baseline)
+* Logistic Regression
+* LinearSVC
+* Explorações complementares com ColumnTransformer e Word2Vec
+
+### Estratégia de avaliação
+* Holdout 80/20 estratificado
+* Validação cruzada
+* Classification Report
+* Matriz de Confusão
+* Análise qualitativa das previsões
+
+### Otimização
+* Ajuste manual do hiperparâmetro `C` do LinearSVC
+* Valores testados: `0.5`, `1.0` e `2.0`
+* Melhor configuração identificada: `C = 1.0`
+
+### Limitações
+* Simplificação do problema multilabel por meio da variável `Tag_principal`
+* Restrição às 100 Tags mais frequentes
+* Utilização exclusiva de metadados textuais, sem análise das imagens das obras
+* Representação textual baseada principalmente em TF-IDF
 
 ## Autora
 Charlyne Scaldini  
