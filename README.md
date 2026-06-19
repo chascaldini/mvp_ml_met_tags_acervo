@@ -4,18 +4,20 @@ MVP de Machine Learning aplicado a acervos culturais | Pós-Graduação em Data 
 ### Acesse o projeto completo:
 [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1VWpG1qHCgHeC20rcwfWGXnnmi8cpWWcb?usp=sharing)
 
-## Objetivo
-Este projeto investiga a utilização de técnicas de Machine Learning e NLP para sugestão automática de descritores em base de dados de acervos culturais a partir de metadados textuais como apoio à catalogação, utilizando o dataset Open Access do Metropolitan Museum of Art.
+## O desafio
+Descritores são elementos fundamentais para a organização, recuperação e descoberta de informações em acervos culturais. Mas será que é possível identificar padrões nos próprios metadados das obras e utilizá-los para apoiar a sugestão automática desses descritores?
+
+Este projeto explora essa questão por meio de técnicas de Machine Learning e Processamento de Linguagem Natural (NLP), utilizando o dataset Open Access do Metropolitan Museum of Art (The Met). A proposta é investigar até que ponto informações presentes em campos como título, material, tipologia e contexto institucional podem contribuir para processos de catalogação e indexação assistidos por inteligência artificial.
+
 > É possível aprender padrões relevantes nos metadados de um acervo e utilizá-los para sugerir descritores de forma automatizada?
 
 ## Fluxo do projeto
 Definição do problema → Carga dos dados → Inspeção inicial → EDA → Seleção de variáveis → Pré-processamento → Modelagem → Avaliação → Otimização → Exploração semântica → Interpretação dos resultados
 
-## Dataset
-Conjunto de dados públicos disponibilizados pelo [Metropolitan Museum of Art (Met)](data/), contendo metadados sobre obras da coleção.
-
-## Abordagem utilizada
-Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
+## Abordagem metodológica
+EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Exploração semântica com Word2Vec
+**Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.
+**Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.
 
 ## Desempenho dos modelos
 | Modelo | Acurácia (Teste) | Validação Cruzada |
@@ -48,7 +50,7 @@ Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
 ### Ambiente de execução
 - Google Colab
 - Seed fixa: `42`
-- Dataset carregado diretamente do repositório Open Access do Metropolitan Museum of Art
+- Dataset carregado diretamente do repositório Open Access do [Metropolitan Museum of Art (Met)](data/)
 - Tempo aproximado de execução completa: 20 minutos
 
 1. Para explorar todas as etapas do projeto, utilize o botão **Open in Colab** disponível no topo deste repositório.
@@ -66,12 +68,6 @@ Python • Pandas • Scikit-Learn • Plotly • Gensim • Google Colab
 * `Object Name`
 * `Classification`
 * `Department`
-
-### Modelos e abordagens avaliados
-* Multinomial Naive Bayes (baseline)
-* Logistic Regression
-* LinearSVC
-* Explorações complementares com ColumnTransformer e Word2Vec
 
 ### Estratégia de avaliação
 * Holdout 80/20 estratificado
