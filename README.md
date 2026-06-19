@@ -15,9 +15,9 @@ Este projeto explora essa questão por meio de técnicas de Machine Learning e P
 Definição do problema → Carga dos dados → Inspeção inicial → EDA → Seleção de variáveis → Pré-processamento → Modelagem → Avaliação → Otimização → Exploração semântica → Interpretação dos resultados
 
 ## Abordagem metodológica
-EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Exploração semântica com Word2Vec
-**Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.
-**Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.
+EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Exploração semântica com Word2Vec  
+**Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.  
+**Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.  
 
 ## Desempenho dos modelos
 | Modelo | Acurácia (Teste) | Validação Cruzada |
