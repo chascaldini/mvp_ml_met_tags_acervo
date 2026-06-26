@@ -4,8 +4,6 @@ MVP de Machine Learning | Pós-Graduação em Data Science & Analytics | PUC-Rio
 ### Acesse o projeto completo:
 [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1VWpG1qHCgHeC20rcwfWGXnnmi8cpWWcb?usp=sharing)
 
-[![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1VWpG1qHCgHeC20rcwfWGXnnmi8cpWWcb)
-
 ## O desafio
 Descritores são elementos fundamentais para a organização, recuperação e descoberta de informações em acervos culturais. Mas será que é possível identificar padrões nos próprios metadados das obras e utilizá-los para apoiar a sugestão automática desses descritores?
 
