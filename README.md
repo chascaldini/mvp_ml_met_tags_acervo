@@ -1,5 +1,5 @@
 # Classificação textual e técnicas de NLP para apoio à catalogação e sugestão de descritores em acervos culturais: um estudo com o Met Open Access
-MVP de Machine Learning aplicado a acervos culturais | Pós-Graduação em Data Science & Analytics | PUC-Rio
+MVP de Machine Learning | Pós-Graduação em Data Science & Analytics | PUC-Rio
 
 ### Acesse o projeto completo:
 [![Open in Colab](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1VWpG1qHCgHeC20rcwfWGXnnmi8cpWWcb?usp=sharing)
@@ -16,6 +16,8 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 
 ## Abordagem metodológica
 EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Exploração semântica com Word2Vec  
+  '
+  
 **Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.  
 **Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.  
 
@@ -89,6 +91,7 @@ EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzad
 
 ## Autora
 Charlyne Scaldini  
+Historiadora | Estruturação da informação e qualidade de dados para acervos digitais  
 [LinkedIn](https://www.linkedin.com/in/charlyne-scaldini-92959a2b2)  
 chascaldini@gmail.com
 
