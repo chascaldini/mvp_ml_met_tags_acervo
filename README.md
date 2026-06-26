@@ -11,6 +11,13 @@ Este projeto explora essa questão por meio de técnicas de Machine Learning e P
 
 > É possível aprender padrões relevantes nos metadados de um acervo e utilizá-los para sugerir descritores de forma automatizada?
 
+## Principais insights
+* Os metadados textuais do acervo demonstraram conter informações relevantes para apoiar a sugestão automática de descritores em processos de catalogação e indexação.
+* A maior parte dos erros ocorreu entre categorias semanticamente próximas, indicando que os modelos frequentemente identificam o contexto geral das obras, ainda que nem sempre prevejam o descritor principal registrado.
+* Modelos clássicos de classificação textual baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros distribuídos em 100 categorias temáticas.
+* A exploração complementar com Word2Vec revelou relações semânticas coerentes entre termos do acervo, evidenciando potencial para enriquecimento de metadados e apoio à construção e revisão de vocabulários controlados.
+* Os resultados reforçam o potencial de técnicas de Machine Learning e Processamento de Linguagem Natural como ferramentas de apoio à catalogação, indexação e recuperação da informação, sempre em complemento à análise especializada realizada pelos profissionais responsáveis pelos acervos.
+  
 ## Fluxo do projeto
 Definição do problema → Carga dos dados → Inspeção inicial → EDA → Seleção de variáveis → Pré-processamento → Modelagem → Avaliação → Otimização → Exploração semântica → Interpretação dos resultados
 
@@ -18,13 +25,6 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 **Técnicas:** NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Word2Vec  
 **Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.  
 **Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.  
-
-## Principais insights
-* Os metadados textuais do acervo demonstraram conter informações relevantes para apoiar a sugestão automática de descritores em processos de catalogação e indexação.
-* A maior parte dos erros ocorreu entre categorias semanticamente próximas, indicando que os modelos frequentemente identificam o contexto geral das obras, ainda que nem sempre prevejam o descritor principal registrado.
-* Modelos clássicos de classificação textual baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros distribuídos em 100 categorias temáticas.
-* A exploração complementar com Word2Vec revelou relações semânticas coerentes entre termos do acervo, evidenciando potencial para enriquecimento de metadados e apoio à construção e revisão de vocabulários controlados.
-* Os resultados reforçam o potencial de técnicas de Machine Learning e Processamento de Linguagem Natural como ferramentas de apoio à catalogação, indexação e recuperação da informação, sempre em complemento à análise especializada realizada pelos profissionais responsáveis pelos acervos.
 
 ## Desempenho dos modelos
 | Modelo              | Acurácia (Teste) | Validação Cruzada |
