@@ -15,9 +15,7 @@ Este projeto explora essa questão por meio de técnicas de Machine Learning e P
 Definição do problema → Carga dos dados → Inspeção inicial → EDA → Seleção de variáveis → Pré-processamento → Modelagem → Avaliação → Otimização → Exploração semântica → Interpretação dos resultados
 
 ## Abordagem metodológica
-EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Exploração semântica com Word2Vec  
-  '
-  
+**Técnicas:** NLP • TF-IDF • Classificação supervisionada • Validação cruzada • Otimização de hiperparâmetros • Word2Vec  
 **Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.  
 **Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.  
 
@@ -28,67 +26,37 @@ EDA • NLP • TF-IDF • Classificação supervisionada • Validação cruzad
 | Logistic Regression | 52,8% | 51,9% |
 | LinearSVC | **53,8%** | **53,3%** |
 
+## Desempenho dos modelos
+
+| Modelo              | Acurácia (Teste) | Validação Cruzada |
+| ------------------- | ---------------: | ----------------: |
+| Naive Bayes         |            44,0% |             43,1% |
+| Logistic Regression |            52,8% |             51,9% |
+| LinearSVC           |        **53,8%** |         **53,3%** |
+
 **Modelo selecionado:** LinearSVC  
-**Exploração complementar:** Word2Vec (4.746 termos no vocabulário aprendido)  
+**Exploração complementar:** Word2Vec (vocabulário com 4.746 termos)
 
 ## Principais insights
-
-- Os metadados textuais do acervo contêm informações suficientes para apoiar a previsão automática de descritores, mesmo sem utilização das imagens das obras.
-- Grande parte dos erros ocorreu entre categorias semanticamente próximas, sugerindo que os modelos frequentemente capturam o contexto geral do objeto cultural.
-- Modelos clássicos de NLP baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros e 100 categorias distintas.
-- A exploração com Word2Vec revelou relações semânticas coerentes entre termos do acervo, indicando potencial para aplicações futuras em sugestão de descritores e vocabulários controlados.
-- Os resultados reforçam a viabilidade do uso de NLP e Machine Learning como ferramentas de apoio à catalogação e recuperação da informação em acervos culturais.
+* Os metadados textuais do acervo demonstraram conter informações relevantes para apoiar a sugestão automática de descritores em processos de catalogação e indexação.
+* A maior parte dos erros ocorreu entre categorias semanticamente próximas, indicando que os modelos frequentemente identificam o contexto geral das obras, ainda que nem sempre prevejam o descritor principal registrado.
+* Modelos clássicos de classificação textual baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros distribuídos em 100 categorias temáticas.
+* A exploração complementar com Word2Vec revelou relações semânticas coerentes entre termos do acervo, evidenciando potencial para enriquecimento de metadados e apoio à construção e revisão de vocabulários controlados.
+* Os resultados reforçam o potencial de técnicas de Machine Learning e Processamento de Linguagem Natural como ferramentas de apoio à catalogação, indexação e recuperação da informação, sempre em complemento à análise especializada realizada pelos profissionais responsáveis pelos acervos.
 
 ## Aplicações em acervos culturais
-- Sugestão automática de descritores
-- Apoio à catalogação
-- Revisão de metadados
-- Enriquecimento de registros documentais
-- Apoio à construção de vocabulários controlados
-- Recuperação da informação em acervos digitais 
+* Sugestão automática de descritores
+* Apoio à catalogação e indexação
+* Revisão e enriquecimento de metadados
+* Apoio à construção e revisão de vocabulários controlados
+* Recuperação da informação
 
-## Boas práticas e reprodutibilidade
-
-### Ambiente de execução
-- Google Colab
-- Seed fixa: `42`
-- Dataset carregado diretamente do repositório Open Access do [Metropolitan Museum of Art (Met)](data/)
-- Tempo aproximado de execução completa: 20 minutos
-
-1. Para explorar todas as etapas do projeto, utilize o botão **Open in Colab** disponível no topo deste repositório.
-3. Executar todas as células do início ao fim
-4. Acompanhar a narrativa do notebook, incluindo EDA, modelagem, avaliação dos modelos e exploração semântica com Word2Vec.
-
-### Definição do problema
-* Coluna original: `Tags`
-* Variável alvo criada: `Tag_principal`
-* Restrição às 100 Tags mais frequentes do dataset
-
-### Features utilizadas
-* `Title`
-* `Medium`
-* `Object Name`
-* `Classification`
-* `Department`
-
-### Estratégia de avaliação
-* Holdout 80/20 estratificado
-* Validação cruzada
-* Classification Report
-* Matriz de Confusão
-* Análise qualitativa das previsões
-
-### Otimização
-* Ajuste manual do hiperparâmetro `C` do LinearSVC
-* Valores testados: `0.5`, `1.0` e `2.0`
-* Melhor configuração identificada: `C = 1.0`
-
-### Limitações
-* Simplificação do problema multilabel por meio da variável `Tag_principal`
-* Restrição às 100 Tags mais frequentes
-* Utilização exclusiva de metadados textuais, sem análise das imagens das obras
-* Representação textual baseada principalmente em TF-IDF
-
+## Como executar
+1. Abra o notebook pelo botão **Open in Colab** disponível no topo deste repositório.
+2. Execute todas as células do início ao fim. O tempo aproximado de execução completa é de 20 minutos.
+3. O notebook foi desenvolvido para execução em Google Colab e utiliza o dataset público do **Metropolitan Museum of Art (Met)** carregado diretamente por URL. Informações adicionais sobre a base de dados estão disponíveis na pasta [`data/`](data/).
+4. Acompanhe a narrativa do notebook, incluindo as etapas de análise exploratória (EDA), modelagem, avaliação dos modelos e exploração semântica com Word2Vec.
+   
 ## Autora
 Charlyne Scaldini  
 Historiadora | Estruturação da informação e qualidade de dados para acervos digitais  
