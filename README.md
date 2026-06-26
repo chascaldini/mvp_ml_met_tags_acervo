@@ -19,15 +19,14 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 **Modelos avaliados:** Multinomial Naive Bayes (baseline), Logistic Regression e LinearSVC.  
 **Tecnologias:** Python, Pandas, Scikit-Learn, Plotly, Gensim e Google Colab.  
 
-## Desempenho dos modelos
-| Modelo | Acurácia (Teste) | Validação Cruzada |
-|----------|----------:|----------:|
-| Naive Bayes | 44,0% | 43,1% |
-| Logistic Regression | 52,8% | 51,9% |
-| LinearSVC | **53,8%** | **53,3%** |
+## Principais insights
+* Os metadados textuais do acervo demonstraram conter informações relevantes para apoiar a sugestão automática de descritores em processos de catalogação e indexação.
+* A maior parte dos erros ocorreu entre categorias semanticamente próximas, indicando que os modelos frequentemente identificam o contexto geral das obras, ainda que nem sempre prevejam o descritor principal registrado.
+* Modelos clássicos de classificação textual baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros distribuídos em 100 categorias temáticas.
+* A exploração complementar com Word2Vec revelou relações semânticas coerentes entre termos do acervo, evidenciando potencial para enriquecimento de metadados e apoio à construção e revisão de vocabulários controlados.
+* Os resultados reforçam o potencial de técnicas de Machine Learning e Processamento de Linguagem Natural como ferramentas de apoio à catalogação, indexação e recuperação da informação, sempre em complemento à análise especializada realizada pelos profissionais responsáveis pelos acervos.
 
 ## Desempenho dos modelos
-
 | Modelo              | Acurácia (Teste) | Validação Cruzada |
 | ------------------- | ---------------: | ----------------: |
 | Naive Bayes         |            44,0% |             43,1% |
@@ -36,13 +35,6 @@ Definição do problema → Carga dos dados → Inspeção inicial → EDA → S
 
 **Modelo selecionado:** LinearSVC  
 **Exploração complementar:** Word2Vec (vocabulário com 4.746 termos)
-
-## Principais insights
-* Os metadados textuais do acervo demonstraram conter informações relevantes para apoiar a sugestão automática de descritores em processos de catalogação e indexação.
-* A maior parte dos erros ocorreu entre categorias semanticamente próximas, indicando que os modelos frequentemente identificam o contexto geral das obras, ainda que nem sempre prevejam o descritor principal registrado.
-* Modelos clássicos de classificação textual baseados em TF-IDF apresentaram resultados consistentes em uma base com mais de 155 mil registros distribuídos em 100 categorias temáticas.
-* A exploração complementar com Word2Vec revelou relações semânticas coerentes entre termos do acervo, evidenciando potencial para enriquecimento de metadados e apoio à construção e revisão de vocabulários controlados.
-* Os resultados reforçam o potencial de técnicas de Machine Learning e Processamento de Linguagem Natural como ferramentas de apoio à catalogação, indexação e recuperação da informação, sempre em complemento à análise especializada realizada pelos profissionais responsáveis pelos acervos.
 
 ## Aplicações em acervos culturais
 * Sugestão automática de descritores
